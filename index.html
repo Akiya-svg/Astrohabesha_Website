@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstroHabesha | Exploring the Cosmos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="space-canvas"></canvas>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/astrohabesha logo.jpg" alt="AstroHabesha Logo" class="nav-logo-img">
+                <span>AstroHabesha</span>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html" class="login-nav-link" style="color: var(--accent-cyan); font-weight: 600;">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero-content">
+            <h1>Exploring the Universe, Inspiring Ethiopia</h1>
+            <p>A student-led movement exploring astronomy and space science.</p>
+            <a href="#events" class="btn">Join 4-Week Course</a>
+
+            <div class="live-stats-bar">
+                <div class="stat-item">
+                    <div class="stat-number">30+</div>
+                    <div class="stat-label">Total Members</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label"><span class="live-dot"></span> Active Members</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Active Projects</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container">
+        <h2 class="section-title">Who We Are</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <h3>Empowering Next-Gen Astronomers</h3>
+                <p>AstroHabesha is a premier student-led organization in Ethiopia dedicated to making astronomy and space science accessible, exciting, and actionable for young minds across the nation.</p>
+                <p>Through observations, workshops, and innovative projects, we cultivate curiosity and build technical capabilities in aerospace fields.</p>
+            </div>
+            <div class="mission-box">
+                <h3>Our Mission</h3>
+                <p>"To inspire, educate, and elevate Ethiopian youths by fostering a collaborative community passionate about space exploration, stargazing, and scientific literacy."</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="container">
+        <h2 class="section-title">Core Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-avatar">
+                    <img src="images/sibhat.jpg" alt="Sibhat Abay" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><text y=\'.9em\' font-size=\'80\'>🪐</text></svg>'">
+                </div>
+                <h4>Sibhat Abay</h4>
+                <p class="role">Founder & President</p>
+            </div>
+
+            <div class="team-member">
+                <div class="member-avatar">
+                    <img src="images/akiya.jpg" alt="Akiya Yirgashewa" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><text y=\'.9em\' font-size=\'80\'>🚀</text></svg>'">
+                </div>
+                <h4>Akiya Yirgashewa</h4>
+                <p class="role">Project Coordinator</p>
+            </div>
+
+            <div class="team-member">
+                <div class="member-avatar" style="display: flex; justify-content: center; align-items: center;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#00cec9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width: 55px; height: 55px;">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                </div>
+                <h4>AstroHabesha Member</h4>
+                <p class="role">Community & Volunteers</p>
+                <p class="role-description">Passionate student volunteers supporting our mission through teamwork, citizen science campaigns, and active outreach.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle-nasa">Experience real space data, nearby asteroids, exoplanets, and deep-sky imagery using interactive, community-led programs.</p>
+        
+        <div class="nasa-apps-container">
+            <div class="nasa-app-row">
+                <div class="nasa-app-media">
+                    <img src="images/exoplanet.jpg" alt="Exoplanet Transit Data App" class="nasa-app-img" onerror="this.parentElement.innerHTML='<div class=\'nasa-img-fallback\'>[ Exoplanet Lightcurve Interface ]</div>'">
+                </div>
+                <div class="nasa-app-info">
+                    <div class="nasa-tag">Active Data Stream</div>
+                    <h3>Exoplanet Transit Analysis</h3>
+                    <p class="nasa-description">
+                        Learn to detect and analyze alien world configurations orbiting distant star systems. By mapping photometric light curves using Python scripts, students track the microscopic drops in ambient starlight caused when a celestial body crosses its host star's boundary path.
+                    </p>
+                    <div class="nasa-tech-notes">
+                        <strong>Scientific Impact Notes:</strong> This pipeline uses real photometric target files matching transiting data sets from the Kepler and TESS missions to help classify exoplanet radii and orbital periods.
+                    </div>
+                    <a href="#events" class="nasa-app-btn">Explore Exoplanets →</a>
+                </div>
+            </div>
+
+            <div class="nasa-app-row reverse">
+                <div class="nasa-app-media">
+                    <img src="images/asteroid.jpg" alt="Asteroid Hunting Map App" class="nasa-app-img" onerror="this.parentElement.innerHTML='<div class=\'nasa-img-fallback\'>[ Asteroid Tracking Interface ]</div>'">
+                </div>
+                <div class="nasa-app-info">
+                    <div class="nasa-tag">Citizen Science</div>
+                    <h3>Asteroid Hunting Campaigns</h3>
+                    <p class="nasa-description">
+                        Track over thousands of minor planetary objects and Near-Earth Objects (NEOs). In global coordination with the International Astronomical Search Collaboration (IASC), our members process raw, high-resolution sky survey images to isolate moving targets from background coordinates.
+                    </p>
+                    <div class="nasa-tech-notes">
+                        <strong>Scientific Impact Notes:</strong> Volunteers use Astrometrica to perform precise astrometric data measurements, contributing directly to the discovery, validation, and naming of real solar system bodies.
+                    </div>
+                    <a href="#events" class="nasa-app-btn">Track Closest Asteroids →</a>
+                </div>
+            </div>
+
+            <div class="nasa-app-row">
+                <div class="nasa-app-media">
+                    <img src="images/astrophotography.jpg" alt="Deep Space Nebula Stacking App" class="nasa-app-img" onerror="this.parentElement.innerHTML='<div class=\'nasa-img-fallback\'>[ Computational Image Core ]</div>'">
+                </div>
+                <div class="nasa-app-info">
+                    <div class="nasa-tag">Imaging Lab</div>
+                    <h3>Astrophotography Processing</h3>
+                    <p class="nasa-description">
+                        Peel back cosmic dust layers and render deep-space stellar nurseries visible. Students master professional software suites to process flexible image transport system (FITS) data files, learning how to layer separate data wavelengths into single true-color configurations.
+                    </p>
+                    <div class="nasa-tech-notes">
+                        <strong>Scientific Impact Notes:</strong> Utilizing open-source utilities like FITS Liberator and GIMP, participants convert scientific satellite data exposures into high-definition deep sky maps of nebulae and galaxies.
+                    </div>
+                    <a href="#events" class="nasa-app-btn">View Cosmic Maps →</a>
+                </div>
+            </div>
+
+            <div class="nasa-app-row reverse">
+                <div class="nasa-app-media">
+                    <img src="images/symposium.jpg" alt="Scientific Societies Symposia" class="nasa-app-img" onerror="this.parentElement.innerHTML='<div class=\'nasa-img-fallback\'>[ Society Alignment Matrix ]</div>'">
+                </div>
+                <div class="nasa-app-info">
+                    <div class="nasa-tag">Symposia Matrix</div>
+                    <h3>Global Scientific Assemblies</h3>
+                    <p class="nasa-description">
+                        Bridge the gap between student researchers and international astrophysics boards. We connect aspiring young scientists in Ethiopia directly with experienced researchers, astronomical societies, and space education pioneers from around the globe.
+                    </p>
+                    <div class="nasa-tech-notes">
+                        <strong>Scientific Impact Notes:</strong> Facilitates research cooperation, career mentorship pathways, and live interactive technical knowledge exchanges with professional astronomy institutions.
+                    </div>
+                    <a href="#events" class="nasa-app-btn">View Assembly Schedule →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="container">
+        <h2 class="section-title">Featured Opportunities & Activities</h2>
+        
+        <div class="card featured-course-card" style="border: 2px solid var(--accent-cyan); background: linear-gradient(135deg, rgba(13,20,38,0.9), rgba(0,206,201,0.15)); margin-bottom: 40px; padding: 40px; border-radius: 16px;">
+            <div class="card-content">
+                <span class="event-date" style="font-size: 1rem; font-weight: bold; color: var(--accent-cyan);">🌌 🔭 FEATURED REGISTRATION OPEN NOW 🚀</span>
+                <h3 style="font-size: 1.8rem; margin: 15px 0 10px 0; color: #fff;">4-Week Astronomy & Space Science Course</h3>
+                <p style="font-size: 1.05rem; margin-bottom: 20px; line-height: 1.6;">
+                    Are you fascinated by the Universe, stars, planets, black holes, telescopes, and space exploration? Join our exclusive 4-week program designed for students across Africa who want to explore the Universe and learn directly from an <strong>Astrophysicist at a university in the United States</strong>!
+                </p>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 15px; margin-bottom: 25px; background: rgba(0,0,0,0.3); padding: 20px; border-radius: 10px;">
+                    <div>
+                        <strong style="color: var(--accent-cyan);">📚 Core Topics Covered:</strong>
+                        <ul style="margin-left: 20px; color: #a4b0be; font-size: 0.9rem; margin-top: 5px;">
+                            <li>Universe & Galaxies</li>
+                            <li>Stars & Stellar Evolution</li>
+                            <li>Planets & Exoplanets</li>
+                            <li>Black Holes & Neutron Stars</li>
+                            <li>Telescopes & Observational Astronomy</li>
+                            <li>Moon & Solar System</li>
+                            <li>Rockets & Space Exploration</li>
+                            <li>Satellites & Space Technology</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <strong style="color: var(--accent-cyan);">📋 Course Details:</strong>
+                        <p style="color: #a4b0be; font-size: 0.9rem; margin-top: 5px;">
+                            ⏳ <strong>Duration:</strong> 4 weeks<br>
+                            💰 <strong>Registration Fee:</strong> 100 ETB (~US$0.61)<br>
+                            👥 <strong>Limited to:</strong> 100 students<br>
+                            🎓 <strong>Certificate:</strong> Provided upon completion<br>
+                            🌍 Open to students across Africa!
+                        </p>
+                    </div>
+                </div>
+
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc5lGMH7SA3BMBpd53NgsJL-ny9VMovS8IzG9c3yQxuOVAh7A/viewform?usp=publish-editor" target="_blank" class="btn" style="background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));">Register for the Course Now →</a>
+            </div>
+        </div>
+
+        <div class="activities-grid">
+            <div class="card">
+                <div class="card-content">
+                    <span class="event-date">August 1–15, 2026</span>
+                    <h3>Exoplanet Transit Program</h3>
+                    <p>Analyze photometric data to observe the tiny drops in starlight caused by planets passing in front of distant stars.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <span class="event-date">August 1–30, 2026</span>
+                    <h3>Asteroid Hunting Program</h3>
+                    <p>Our citizen science research campaign in collaboration with IASC. Analyze real sky survey datasets to detect and track Near-Earth Objects.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <span class="event-date">August 12, 2026</span>
+                    <h3>Experience Sharing Session</h3>
+                    <p>An exclusive interactive gathering to learn from industry insights, professional pathways, and technical space science experiences.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <span class="event-date">August 15–30, 2026</span>
+                    <h3>Astrophotography Program</h3>
+                    <p>Master the night sky alongside PACS e-Lab. Capture deep-sky configurations and study computational data stacking techniques.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="container">
+        <h2 class="section-title">Cosmic Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item-wrapper">
+                <img src="images/gallery1.jpg" alt="Telescope Observation Setup" class="gallery-img-fluid" onerror="this.parentElement.innerHTML='<div class=\'gallery-fallback\'>[ Telescope Setup ]</div>'">
+            </div>
+            <div class="gallery-item-wrapper">
+                <img src="images/gallery2.jpg" alt="AstroHabesha Workshop" class="gallery-img-fluid" onerror="this.parentElement.innerHTML='<div class=\'gallery-fallback\'>[ Workshop Session ]</div>'">
+            </div>
+            <div class="gallery-item-wrapper">
+                <img src="images/gallery3.jpg" alt="Moon Astrophotography Capture" class="gallery-img-fluid" onerror="this.parentElement.innerHTML='<div class=\'gallery-fallback\'>[ Moon Capture ]</div>'">
+            </div>
+            <div class="gallery-item-wrapper">
+                <img src="images/gallery4.jpg" alt="Team Cosmic Hackathon" class="gallery-img-fluid" onerror="this.parentElement.innerHTML='<div class=\'gallery-fallback\'>[ Hackathon Session ]</div>'">
+            </div>
+            <div class="gallery-item-wrapper">
+                <img src="images/gallery5.jpg" alt="Deep Space Nebula" class="gallery-img-fluid" onerror="this.parentElement.innerHTML='<div class=\'gallery-fallback\'>[ Deep Space ]</div>'">
+            </div>
+            <div class="gallery-item-wrapper">
+                <img src="images/gallery6.jpg" alt="Stargazing Community Night" class="gallery-img-fluid" onerror="this.parentElement.innerHTML='<div class=\'gallery-fallback\'>[ Stargazing Night ]</div>'">
+            </div>
+            <div class="gallery-item-wrapper">
+                <img src="images/gallery7.jpg" alt="Solar Telescope View" class="gallery-img-fluid" onerror="this.parentElement.innerHTML='<div class=\'gallery-fallback\'>[ Solar Observation ]</div>'">
+            </div>
+            <div class="gallery-item-wrapper">
+                <img src="images/gallery8.jpg" alt="Data Analysis Interface" class="gallery-img-fluid" onerror="this.parentElement.innerHTML='<div class=\'gallery-fallback\'>[ Data Analysis ]</div>'">
+            </div>
+        </div>
+    </section>
+
+    <section id="partners" class="container">
+        <h2 class="section-title">Supported By</h2>
+        <div class="partners-logos-grid">
+            <div class="partner-card">
+                <img src="images/iasc_logo.png" alt="IASC Logo" class="partner-logo-img" onerror="this.style.display='none'">
+                <div class="partner-logo-text">International Astronomical Search Collaboration</div>
+            </div>
+            <div class="partner-card">
+                <img src="images/pacs_logo.png" alt="PACS e-Lab Logo" class="partner-logo-img" onerror="this.style.display='none'">
+                <div class="partner-logo-text">Pan African Citizen Science e-Laboratory</div>
+            </div>
+            <div class="partner-card">
+                <img src="images/wvu_logo.png" alt="WVU Logo" class="partner-logo-img" onerror="this.style.display='none'">
+                <div class="partner-logo-text">West Virginia University</div>
+            </div>
+            <div class="partner-card">
+                <img src="images/esss_logo.png" alt="ESSS Logo" class="partner-logo-img" onerror="this.style.display='none'">
+                <div class="partner-logo-text">Ethiopian Space Science Society</div>
+            </div>
+            <div class="partner-card">
+                <img src="images/ase_logo.png" alt="ASE Logo" class="partner-logo-img" onerror="this.style.display='none'">
+                <div class="partner-logo-text">Astronomical Society of Ethiopia</div>
+            </div>
+            <div class="partner-card">
+                <img src="images/kaist_logo.png" alt="KAIST Logo" class="partner-logo-img" onerror="this.style.display='none'">
+                <div class="partner-logo-text">Kaist University</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2 class="section-title">Join the Orbit</h2>
+        <div class="contact-wrapper">
+            <div class="contact-info-grid">
+                <div class="contact-card sibhat-border">
+                    <h3>Sibhat Abay</h3>
+                    <p>Founder & President</p>
+                    <div class="contact-detail">📞 Phone: +251 90 020 5912</div>
+                    <div class="contact-detail">✉️ Email: sibhatabay@gmail.com</div>
+                </div>
+                <div class="contact-card akiya-border">
+                    <h3>Akiya Yirgashewa</h3>
+                    <p>Project Coordinator</p>
+                    <div class="contact-detail">📞 Phone: +251 91 287 6404</div>
+                    <div class="contact-detail">✉️ Email: astroakiya@gmail.com</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AstroHabesha. Designed for the Future. Ad Astra!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
